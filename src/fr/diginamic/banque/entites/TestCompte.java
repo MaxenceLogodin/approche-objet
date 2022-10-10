@@ -7,7 +7,7 @@ public class TestCompte {
 		
 		Compte compte = new Compte(1654641, 10050.62);
 		
-		//System.out.println(compte);
+		System.out.println(compte);
 		
 		
 		
@@ -15,11 +15,10 @@ public class TestCompte {
 		tabComptes[0] = new Compte(0, 12.5);
 		tabComptes[1] = new CompteTaux(1, 2500.5, 1.2);
 		
-		int i=0;
+		
 		
 		for (Compte compte2 : tabComptes) {
-			System.out.println(tabComptes[i]+"\n");
-			i++;
+			System.out.println(compte2+"\n");
 		}
 		
 		
