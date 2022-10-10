@@ -12,9 +12,12 @@ public class TestPersonne {
 		AdressePostale adresse2 = new AdressePostale(62, "Boulevard Gabriel Lauriol", 44300, "Nantes");
 
 		Personne p1 = new Personne("Doe", "John", adresse1);
-		
+		p1.setAdressePostale(adresse1);
 
 		Personne p2 = new Personne("Doe", "Jane", adresse2);
+		p2.setAdressePostale(adresse2);
+		
+		
 		
 		
 
