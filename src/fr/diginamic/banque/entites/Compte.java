@@ -13,5 +13,9 @@ public class Compte {
 	}
 	
 	
+	public String toString() {
+		return "numéro de compte : "+numeroDeCompte + "\n"+ "solde de compte : " + + soldeDeCompte;
+	}
+	
 
 }
