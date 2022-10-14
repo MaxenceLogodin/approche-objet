@@ -60,10 +60,5 @@ public class Maison {
 		}
 		return "Nombre de " + type + " : " +somme;
 	}
-	
-	
-	
-	
-	
-	
+		
 }
