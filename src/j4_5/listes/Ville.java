@@ -21,10 +21,6 @@ public class Ville {
 		return "Ville [nom=" + nom + ", nbHabitant=" + nbHabitant + "]";
 	}
 	
-	
-	
-	
-	
 	public String getNom() {
 		return nom;
 	}
@@ -37,6 +33,12 @@ public class Ville {
 	public void setNbHabitant(int nbHabitant) {
 		this.nbHabitant = nbHabitant;
 	}
+	
+	
+	
+	
+	
+	
 	public static void main(String[] args) {
 		ArrayList<Ville> listVilles = new ArrayList();
 		listVilles.add(new Ville("Nice", 343000));
@@ -70,7 +72,6 @@ public class Ville {
 		int indexVille=0;
 		
 		for (int i = 1; i < listVilles.size(); i++) {
-			
 			if (listVilles.get(i).nbHabitant<villeMoinsPeuple.nbHabitant) {
 				villeMoinsPeuple.nbHabitant =listVilles.get(i).nbHabitant;
 				villeMoinsPeuple.nom =listVilles.get(i).nom;
@@ -87,7 +88,7 @@ public class Ville {
 		// Modif Nom ville <100000 en Maj
 		for (int i = 0; i < listVilles.size(); i++) {
 			if (listVilles.get(i).nbHabitant>100000) {
-				listVilles.get(i).setNom(listVilles.get(i).nom.toUpperCase());
+				listVilles.get(i).setNom( listVilles.get(i).nom.toUpperCase() );
 			}
 		}
 		
