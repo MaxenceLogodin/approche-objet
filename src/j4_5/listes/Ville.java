@@ -2,7 +2,7 @@ package j4_5.listes;
 
 import java.util.ArrayList;
 
-public class Ville {
+public class Ville implements Comparable<Ville> {
 	
 	public String nom;
 	public int nbHabitant;
@@ -38,7 +38,14 @@ public class Ville {
 	
 	
 	
+	@Override
+	public int compareTo(Ville autreVille) {
+		 //return this.ville.compareTo(autreVille.getVille());//tri par nom
+		return nbHabitant-autreVille.getNbHabitant();//tri par habitant
+	}
 	
+	
+	//Méthode executable 
 	public static void main(String[] args) {
 		ArrayList<Ville> listVilles = new ArrayList();
 		listVilles.add(new Ville("Nice", 343000));
