@@ -41,6 +41,26 @@ public class LectureFichier {
 			System.out.println(ville);
 		}
 		
+		
+		
+		
+		//Exercice 3 Generer Fichier
+		List<String> listeVilles25k = new ArrayList<>();
+		listeVilles25k.add("Nom; Code Département; Nom de la région; Population totale");
+		
+		for (int i = 1; i < lines.size(); i++) {
+			String[] splt = lines.get(i).split(";");
+			if (Integer.parseInt(splt[9].trim().replace(" ", ""))>=25000) {
+				listeVilles25k.add( splt[6] +"; "+ splt[2] +"; "+ splt[1] +"; "+ splt[9] );
+			}
+		}
+		
+		Path newPath25k = Paths.get(path.getParent()+"\\recensement25k.csv");
+		Files.write(newPath25k, listeVilles25k);
+		
+		
+		
+		
 	}
 
 }
